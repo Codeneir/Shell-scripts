@@ -2,17 +2,17 @@ def notify(interfunction):
     def catcher():
         for i in range(2):
             try:
-                interfunction();
+                interfunction()
             except:
-                pass;
+                pass
         else:
-            interfunction();
-    return catcher();
+            interfunction()
+    return catcher()
     
 
 @notify
 def helloer():
-    print 'hello!';
-    raise Exception;
+    print 'hello!'
+    raise Exception
 
-helloer();  
+helloer()  
